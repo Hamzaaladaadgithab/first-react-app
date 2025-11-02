@@ -1,5 +1,6 @@
 import logo from "./logo.svg";
 import "./App.css";
+import MyFirstComponent from "./MyFirstComponent";
 
 function App() {
   return (
@@ -9,6 +10,11 @@ function App() {
         <p>
           Edit <code>src/App.js</code> and save to refresh.
         </p>
+
+        <h1>Tarmeez</h1>
+
+        <MyFirstComponent />
+
         <a
           className="App-link"
           href="https://reactjs.org"
