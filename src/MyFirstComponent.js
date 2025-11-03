@@ -1,11 +1,43 @@
+/* import "./FirstComponentStyle.css";
+
 export default function MyFirstComponent() {
+  const x = 10;
+  const person = {
+    name: "hamza",
+    email: "hamza@gmail.com",
+  };
+
+  const elmStyle = {
+    backgroundColor: "blue",
+    fontSize: "20px",
+    boxShadow: "0px 20px 10px black",
+  };
+
   return (
     <div>
-      <h1>Hello Hamza</h1>
+      <div>
+        <h1 style={elmStyle}> {person.name} Hello Hamza x + 10</h1>
 
-      <h2>Hi.</h2>
+        <h3>{person.email}</h3>
 
-      <button>Click Me...</button>
+        <h2 className={"active"} style={elmStyle}>
+          Hi.
+        </h2>
+
+        <h3 className={"active redBg"}>{person.email}</h3>
+
+        <h1 className={person.name == "hamza" ? "redBg" : "greenBg"}>
+          Check Name
+        </h1>
+
+        <button onClick={sayHello}>Click Me</button>
+      </div>
     </div>
   );
 }
+
+function sayHello() {
+  alert("hello...");
+}
+
+*/
